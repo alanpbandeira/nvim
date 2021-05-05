@@ -21,4 +21,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Airline plugins
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+
+
 call plug#end()
+
+" Automatically install new plugins when neovim starts
+autocmd VimEnter *
+    \ if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+    \| PlugInstall --sync | q
+    \| endif
