@@ -10,18 +10,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    "Plug 'scrooloose/NERDTree'
+    
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    
     " OneDark Theme
     Plug 'joshdick/onedark.vim'
+    
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    
     " Airline plugins
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
+    " FZF 
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
 
 call plug#end()
 
