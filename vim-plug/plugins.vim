@@ -38,6 +38,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'    
 
+    " Snippets
+    Plug 'honza/vim-snippets'
+
 call plug#end()
 
 " Automatically install new plugins when neovim starts
