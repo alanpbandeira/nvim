@@ -41,6 +41,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Snippets
     Plug 'honza/vim-snippets'
 
+    " Keybiding reminder
+    Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 " Automatically install new plugins when neovim starts
