@@ -43,6 +43,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Keybiding reminder
     Plug 'liuchengxu/vim-which-key'
+
+    " Good comments
+    Plug 'preservim/nerdcommenter'
+    
+    " Open things on floating windows
+    Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 " Automatically install new plugins when neovim starts
