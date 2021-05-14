@@ -49,6 +49,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Open things on floating windows
     Plug 'voldikss/vim-floaterm'
+
+    " Text navigation
+    Plug 'justinmk/vim-sneak'
+
 call plug#end()
 
 " Automatically install new plugins when neovim starts
