@@ -53,6 +53,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Text navigation
     Plug 'justinmk/vim-sneak'
 
+    " Useful text coloring
+    Plug 'norcalli/nvim-colorizer.lua'
+
 call plug#end()
 
 " Automatically install new plugins when neovim starts
