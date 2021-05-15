@@ -56,6 +56,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Useful text coloring
     Plug 'norcalli/nvim-colorizer.lua'
+    
+    " Startscreen
+    Plug 'mhinz/vim-startify'
 
 call plug#end()
 
