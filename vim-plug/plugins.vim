@@ -59,6 +59,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Startscreen
     Plug 'mhinz/vim-startify'
+    
+    " Tag bar for code navigation
+    Plug 'preservim/tagbar'
+    
+    " Python support
+    Plug 'nvie/vim-flake8'
 
 call plug#end()
 

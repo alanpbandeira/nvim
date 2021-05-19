@@ -1,5 +1,5 @@
-source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/paths.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/which-keys.vim
@@ -15,6 +15,9 @@ source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
+source $HOME/.config/nvim/plug-config/tagbar.vim
+source $HOME/.config/nvim/plug-config/autopairs.vim
+source $HOME/.config/nvim/plug-config/flake8.vim
 
 
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua

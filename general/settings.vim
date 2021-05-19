@@ -2,8 +2,15 @@
 let g:mapleader = "\<Space>"
 
 syntax enable                           " Enables syntax highlighing
-set hidden                              " Required to keep multiple buffers open multiple buffers
+set relativenumber                      " Set line numbers relative to current line
+set nu                                  " Shows current line number by the side of relative line numbers
+set nohlsearch                          " Disable highlighing fot search
+set hidden                              " Required to keep multiple buffers 
 set nowrap                              " Display long lines as just one line
+set incsearch                           " Highlight as going through a search
+set scrolloff=8                         " Starts to roll the screen when o are 8 lines away from the end.
+set signcolumn=yes
+set colorcolumn=80
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -15,8 +22,9 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
-set tabstop=2                           " Insert 2 spaces for a tab
-set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set tabstop=4                           " Insert 2 spaces for a tab
+set softtabstop=4
+set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
@@ -39,3 +47,9 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+highlight Normal guibg=none
+
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
