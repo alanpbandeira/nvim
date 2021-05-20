@@ -17,6 +17,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " OneDark Theme
     Plug 'joshdick/onedark.vim'
     
+    " Dracula theme
+    Plug 'dracula/vim', { 'as': 'dracula' }
+
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     
