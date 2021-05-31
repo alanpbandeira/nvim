@@ -5,6 +5,15 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
 
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "disableWorkspaceFolders": true,
+      "filetypes": ["go"]
+    }
+  },
+
   "snippets.ultisnips.directories":
   [
     "UltiSnips",
@@ -19,6 +28,7 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
+  "explorer.file.showHiddenFiles": true,
 
   // icons
   "suggest.completionItemKindLabels": {
