@@ -1,3 +1,9 @@
+import os
+
+
+a = os.path.abspath()
+
+
 def thats_my_test():
     print("this prints a test")
 

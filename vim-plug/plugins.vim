@@ -13,6 +13,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+
+    " Text surrounding with '()' '[]' '{}' and HTML tags
+    Plug 'tpope/vim-surround'
     
     " OneDark Theme
     Plug 'joshdick/onedark.vim'
@@ -62,6 +65,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Startscreen
     Plug 'mhinz/vim-startify'
+
+    " Session manggement
+    Plug 'tpope/vim-obsession'
     
     " Tag bar for code navigation
     Plug 'preservim/tagbar'
